@@ -20,26 +20,26 @@
 // c.Calculates the total price and returns a string that contains the name of each of the dishes and the total price of the meal, formatted as you like.
 menu = {
   _courses: {
-    _appetizers: [],  //error when doesn't include _
-    _mains: [],
-    _desserts: [],
+    appetizers: [],
+    mains: [],
+    desserts: [],
     get appetizers() {  //4
-    return this._appetizers; //error when include _course
+    return `${this._courses.appetizers}`  //? remove parse type?
     },
-    set appetizers(dish) {
-    this._appetizers = dish;  //equivalent to this._courses.appetizers
+    set appetizers(new) {
+    this.appetizers = new;  //equivalent to this._courses.appetizers
     },
     get mains() {
-    return this._mains;
+    return `${this._courses.mains}`
     },
-    set mains(dish) {
-    this._mains = dish;
+    set mains(new) {
+    this.mains = new;
     },
     get desserts() {
-    return this._desserts;
+    return `${this._courses.desserts}`
     },
-    set desserts(dish) {
-    this._desserts = dish;
+    set desserts(new) {
+    this.desserts = new;
     },   
   },
   get courses() {  //5-6
@@ -49,20 +49,19 @@ menu = {
       desserts: this.desserts
       };
   },
-  addDishToCourse(courseName, dishName, dishPrice) {   //7-8
-    const dish = {
+  const addDishToCourse = function(courseName, dishName, dishPrice) {   //7-8
+    return dish = {
       name: dishName,
       price: dishPrice
     };
-    //courseName.push(dish)   error
-    return this._courses[courseName].push(dish);  //error if doesn't use brackets
+    Object.assign(this._course,{courseName:dish})
   },
-  getRandomDishFromCourse(courseName) { //9-10
-  const dishes = this._courses[courseName]; 
-  const index = Math.floor(Math.random()*dishes.length);
+  const getRandomDishFromCourse = function(courseName) { //9-10
+  const dishes = this._courses.[courseName]; //array?
+  const index = Math.floor(Math.random()*dishes.length));
   return dishes[index];
   },
-  generateRandomMeal() { //11
+  const generateRandomMeal() { //11
   const appetizer = this.getRandomDishFromCourse('appetizers');
   const main = this.getRandomDishFromCourse('mains');
   const dessert = this.getRandomDishFromCourse('desserts');
@@ -72,17 +71,17 @@ menu = {
 };
 
 //12.Now that we’ve finished our menu, object, let’s use it to create a menu by adding some appetizers, mains, and desserts with the .addDishToCourse() function. Add at least 3 dishes to each course (or more if you like!).
-menu.addDishToCourse('appetizers', 'soup', 10);
-menu.addDishToCourse('appetizers', 'salad', 15);
-menu.addDishToCourse('appetizers', 'stewed veggies', 15);
+menu.addDishToCourse = function('appertizers', 'soup', 10);
+menu.addDishToCourse = function('appertizers', 'salad', 15);
+menu.addDishToCourse = function('appertizers', 'stewed veggies', 15);
 
-menu.addDishToCourse('mains', 'rice', 13);
-menu.addDishToCourse('mains', 'noodle', 14);
-menu.addDishToCourse('mains', 'grilled', 17);
+menu.addDishToCourse = function('mains', 'rice', 13);
+menu.addDishToCourse = function('mains', 'noodle', 14);
+menu.addDishToCourse = function('mains', 'grilled', 17);
 
-menu.addDishToCourse('desserts', 'cake', 8);
-menu.addDishToCourse('desserts', 'pudding', 10);
-menu.addDishToCourse('desserts', 'fruit', 12);
+menu.addDishToCourse = function('desserts', 'cake', 8);
+menu.addDishToCourse = function('desserts', 'pudding', 10);
+menu.addDishToCourse = function('desserts', 'fruit', 12);
 //13.Once your menu has items inside it, generate a meal by using the .generateRandomMeal() function on your menu, and save it to a variable called meal. Lastly, print out your meal variable to see what meal was generated for you.
 const meal = menu.generateRandomMeal();
-console.log(meal);
+console.log(meal)
