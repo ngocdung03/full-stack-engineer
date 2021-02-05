@@ -144,3 +144,5 @@ const { residence } = vampire;  //equivalent to const residence = vampire.reside
 console.log(residence); // Prints 'Transylvania'
 ```
 - Built-in methods for Objects: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods
+- More about Objects:
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects
