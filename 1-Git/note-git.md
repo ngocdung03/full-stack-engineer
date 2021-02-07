@@ -22,3 +22,4 @@
 ##### Markdown
 - Markdown cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 - Markdown in VSCode: https://code.visualstudio.com/docs/languages/markdown
+- How to write a good README: https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project
