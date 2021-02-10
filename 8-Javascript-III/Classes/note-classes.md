@@ -87,3 +87,8 @@ class Animal {
 } 
 //Because of the static keyword, we can only access .generateName() by appending it to the Animal class.
 ```
+- Understanding class, prototypes and inheritance in Javascript: 
+  - https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript#constructor-functions
+  - https://www.taniarascia.com/understanding-classes-in-javascript/
+
+- More on Classes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
