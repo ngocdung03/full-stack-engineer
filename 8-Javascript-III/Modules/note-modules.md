@@ -88,3 +88,45 @@ export function isVegetarian() {
 function isLowSodium() {
 }; 
 ```
+- Import *Named Imports*: exporting upon declaration does not have an impact on how we import the variables.
+
+- *Export as*: Named exports also conveniently offer a way to change the name of variables when we export or import them. We can do this with the `as` keyword.
+```
+let specialty = '';
+let isVegetarian = function() {
+}; 
+let isLowSodium = function() {
+}; 
+ 
+export { specialty as chefsSpecial, isVegetarian as isVeg, isLowSodium };
+```
+- *Import as*:
+```
+// using aliases is to import the entire module
+import * as Carte from './menu';
+ 
+Carte.chefsSpecial;
+Carte.isVeg();
+Carte.isLowSodium(); 
+```
+
+- Combining export Statements: it is useful on occasion. For example, if you suspect developers may only be interested in importing a specific function and won’t need to import the entire default export.
+```
+let specialty = '';
+function isVegetarian() {
+}; 
+function isLowSodium() {
+}; 
+function isGlutenFree() {
+};
+ 
+export { specialty as chefsSpecial, isVegetarian as isVeg };
+export default isGlutenFree;
+```
+
+- Combining Import Statements:
+```
+import { specialty, isVegetarian, isLowSodium } from './menu';
+ 
+import GlutenFree from './menu';
+```
