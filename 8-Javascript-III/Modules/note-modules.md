@@ -130,3 +130,5 @@ import { specialty, isVegetarian, isLowSodium } from './menu';
  
 import GlutenFree from './menu';
 ```
+- More on Modules: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+- Learn about CJS, AMD, UMD, ESM: https://dev.to/iggredible/what-the-heck-are-cjs-amd-umd-and-esm-ikm
