@@ -17,3 +17,7 @@
 - Test code is included with and structured similarly to implementation code. Often times changes to test code are associated with changes to implementation code and vice versa. Both are easier to maintain when they are stored in the same place.
 - Imagine explaining your app to someone else. How does it behave? Does it rely on other software? How do you run it on a computer? You could read every line in every file to figure that out. Or you could read the *documentation*.
 - When adding a new feature to your product, it’s possible that something will break. If that break occurs within a feature developed earlier, it is called *regression*. When functionality previously developed and tested stops working, you may say the *functionality regressed*.
+- *Test-driven development: https://en.wikipedia.org/wiki/Test-driven_development
+- *Unit testing*: https://en.wikipedia.org/wiki/Unit_testing
+- *Integration testing* is the phase in software testing in which individual software modules are combined and tested as a group: https://en.wikipedia.org/wiki/Integration_testing
+- Introduction to TDD: https://hackernoon.com/introduction-to-test-driven-development-tdd-61a13bc92d92
