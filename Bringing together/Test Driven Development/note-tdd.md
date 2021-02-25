@@ -1,4 +1,4 @@
-- Ref - Software errors costs: https://web.archive.org/web/20090610052743/http://www.nist.gov/public_affairs/releases/n02-10.htm
+- Software errors costs: https://web.archive.org/web/20090610052743/http://www.nist.gov/public_affairs/releases/n02-10.htm
 - How do we hunt for bugs? https://discuss.codecademy.com/t/how-do-we-hunt-for-bugs/386978
 - *Manual testing* is a form of testing done by a human interacting with a system. With web apps, this might be clicking, dragging, and typing through a webpage. A list of actions and expected behaviors would be given. If the observed behavior doesn’t match the expected behavior, the application has an error.
     Example: Manually test the web app by following the list provided:
@@ -21,3 +21,4 @@
 - *Unit testing*: https://en.wikipedia.org/wiki/Unit_testing
 - *Integration testing* is the phase in software testing in which individual software modules are combined and tested as a group: https://en.wikipedia.org/wiki/Integration_testing
 - Introduction to TDD: https://hackernoon.com/introduction-to-test-driven-development-tdd-61a13bc92d92
+- Refore more in Dataquest
