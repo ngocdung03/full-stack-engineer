@@ -3,4 +3,3 @@
 - Introducing asynchronous JavaScript: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
 - Call back hell: http://callbackhell.com/
 - Cooperative asynchronous JavaScript: Timeouts and intervals: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals
-- Update
